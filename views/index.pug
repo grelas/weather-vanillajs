@@ -1,0 +1,42 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    link(rel='stylesheet', href='static/css/app.css')
+    title Weather App Practice Project
+  body
+    .app
+      .main
+        .loader
+        .weather-select
+          select.select
+            each city in cities
+              option(value=city) #{city.name}
+        .error
+        .content
+          .hourly-forecast
+          .weekly-forecast
+
+
+    script.
+      window.app = window.app || {};
+      window.app.PORT = #{port};
+      window.app.DEFAULT_CITY = !{defaultCity}
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js')
+    script(src='static/js/WeatherConfig.js')
+    script(src='static/js/Globals.js')
+    script(src='static/js/Helpers.js')
+    script(src='static/js/WeatherView.js')
+    script(src='static/js/CacheService.js')
+    script(src='static/js/ApiService.js')
+    script(src='static/js/WeatherStore.js')
+    script(src='static/js/WeatherModel.js')
+    script(src='static/js/WeatherController.js')
+    script(src='static/js/SvgIconComponent.js')
+    script(src='static/js/WeeklySummaryComponent.js')
+    script(src='static/js/ForecastChartComponent.js')
+    script(src='static/js/ForecastDetailsComponent.js')
+    script(src='static/js/ForecastItemComponent.js')
+    script(src='static/js/WeatherApp.js')

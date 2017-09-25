@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #edeff0;
+  color: #333;
+}
+
+.loader {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 400ms ease, visibility 400ms ease;
+}
+
+body.is-ready, .loader.is-ready {
+  opacity: 1;
+  visibility: visible;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+.app {
+  display
+  margin: 0 auto;
+}
+
+.error {
+  display: none;
+  text-align: center;
+}
+
+.show {
+  display: block;
+}
+
+.header {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #999;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main {
+  max-width: 740px;
+  margin: 50px auto;
+  border-radius: 1px;
+  border: 1px solid #eee;
+  border-bottom-color: #e5e5e5;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 1px 8px rgba(0,0,0,.04);
+}
+
+.forecasts {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.forecast-item {
+  padding: 12px 10px;
+  border: 1px solid transparent;
+  border-radius: 1px;
+  text-align: center;
+  font-size: 11px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.forecast-item:not(:last-child) {
+  margin-right: 2px;
+}
+
+.forecast-item.is-active,
+.forecast-item:hover {
+  background-color: #fafafa;
+  border-color: #eee;
+}
+
+.forecast-visual {
+  margin: 5px auto;
+  width: 46px;
+  height: 38px;
+}
+
+.forecast-visual .icon {
+  width: 36px;
+  height: 36px;
+  fill: black;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.icon-rain {
+
+}
+
+.icon-partly-cloudy-day {
+
+}
+
+.icon-cloudy {
+
+}
+
+.icon-clear-day {
+
+}
+
+.icon-clear-night {
+
+}
+.icon-snow {
+
+}
+
+.icon-sleet {
+
+}
+
+.icon-wind {
+
+}
+
+.icon-fog {
+
+}
+
+.icon-partly-cloudy-night {
+
+}
+
+.day, .desc {
+  color: #999;
+}
+
+.day {
+  margin: 0;
+  letter-spacing: -0.03em;
+}
+
+.temperatures {
+  margin-top: 4px;
+}
+
+.high {
+  color: #666;
+}
+
+.low {
+  color: #CCC;
+}
+
+.current-weather {
+  display: flex;
+  letter-spacing: -0.01em;
+}
+
+.current-weather-details {
+  margin-left: auto;
+}
+
+.current-weather-summary {
+  line-height: 1.4;
+}
+
+.current-temperature {
+  margin-top: 12px;
+  color: #000;
+  font-size: 62px;
+  line-height: 1;
+  display: inline-block;
+}
+
+.current-temperature .scale {
+  font-size: 30%;
+  display: inline-block;
+  font-weight: 300;
+  vertical-align: top;
+  position: relative;
+  top: 7px;
+  left: -4px;
+}
+
+.current-weather-city {
+  font-size: 24px;
+}
+
+.weather-select {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+}
+
+.weather-select .select {
+  width: 100%;
+  display: block;
+  height: 50px;
+  font-size: 24px;
+  background: none;
+  border: 0;
+  outline: 0;
+}
+
+.weather-select .select:focus {
+  border-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 10px rgba(0, 0, 0, 0.1);
+  outline: 0 none;
+}
+
+.weather-chart {
+  margin: 10px 0;
+  background-color: #fff;
+  height: 120px;
+}
+
+.weather-chart > svg {
+  width: 100%;
+}
+
